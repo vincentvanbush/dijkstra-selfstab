@@ -59,7 +59,6 @@ class Node extends Actor {
     }
 
     case Tamper => {
-//      state = Random.nextInt(1000)
       state = Random.nextInt(1000)
       nextNode ! state
       println(s"[$id] state tampered to $state")
